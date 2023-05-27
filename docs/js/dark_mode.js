@@ -2,7 +2,7 @@ const d = document,
   oscuro = "rgb(35,35,35)",
   claro = "rgb(230, 230, 230)",
   footer_claro = 'rgb(200,200,200)',
-  footer_oscuro = 'rgb(45,45,)'
+  footer_oscuro = 'rgb(45,45,45)'
 
   
   export function darkButton() {
