@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/cono.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body class="light">
+  <header>
+    <div class="nombre">
+      <img src="img/cono.svg" alt="Logo institucional">
+      <h1>be <br>safe.</h1>
+    </div>
+    <nav class="menu">
+      <a href="./index.html">
+        <img src="./img/home.svg" alt="Home">
+        <p>Inicio</p>
+      </a>
+      <a href="./nosotros.html"><img src="./img/nosotros.svg" alt="">
+        <p>Nosotros</p>
+      </a>
+      <a href="./productos.html"><img src="./img/productos.svg" alt="">
+        <p>Productos</p>
+      </a>
+      <a href="./formulario.html"><img src="./img/contacto.svg" alt="">
+        <p>Contacto</p>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <form class="form">
+      <h3>Formulario de contacto</h3>
+      <p>Consultenos sobre nuestros productos, o suscribase para estar al día de todas las novedades acerca de los EPP
+      </p>
+
+      <label>Nombre:
+        <input type="text" name="nombre" placeholder="Ingrese su nombre"
+          title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]{1,50}$"
+          required></label>
+
+      <p>
+        <label>E-mail:
+          <input type="mail" name="mail"
+            pattern="^[A-Za-z0-9]+(\.[A-Za-z0-9]+|-[A-Za-z0-9]+|_[A-Za-z0-9]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*(\.[A-Za-z]{2,15})$"
+            required placeholder="Ingrese su e-mail" title="e-mail valido: usuario@servidor.dominio"></label>
+
+      </p>
+
+      <p>
+        <label>Dejenos un comentario
+          <textarea name="comentarios" cols="40" rows="5"></textarea>
+        </label>
+      </p>
+      <input type="submit" value="Enviar">
+    </form>
+  </main>
+  <script src="js/formulario.js" type="module"></script>
+  <script src="js/dark.js" type="module"></script>
+
+  <footer>
+    <div class="pie">
+      <img src="img/cono.svg" alt="Logo institucional">
+    </div>
+    <div class="pie">
+      <p class="tablet">Somos una empresa dedicada a la comercialización y distribución de Equipos y Elementos de
+        Protección
+        Personal</p>
+      <p class="phone"><b>be safe</b> Nos dedicamos a la seguridad</p>
+      <h3>Contáctenos</h3>
+      <ul class=list>
+        <li><i class='bx bx-location-plus bx-sm'></i> Doctor Mestre 410, Villa Mercedes, San Luis</li>
+        <li><i class='bx bx-envelope bx-sm'></i> sitiobesafe@gmail.com</li>
+        <li><i class='bx bxl-whatsapp bx-sm'></i> 2657 245292</li>
+      </ul>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
